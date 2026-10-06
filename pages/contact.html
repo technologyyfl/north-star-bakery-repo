@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Star Bakery</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+        <header>
+        <!-- 1. Brand Logo & Title / Nav -->
+        <a href="/" class="logo">
+            <img src="../images/bakery-logo_c.png" alt="North Star Bakery Logo" width="250" height="250">
+        </a>
+        <h1>Contact</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <!-- 2. Pre-order form -->
+        <form action="/pre-order" method="post">
+            <fieldset id="contact-info">
+                <legend>Contact Info</legend>
+                <label for="name">Name:</label>
+                <input type="text" name="name" required></br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" required></br>
+            </fieldset>
+            <fieldset id="request-info">
+                <legend>Request Info</legend>
+                <label for="pickupdate">Pickup Date:</label>
+                <input type="date" name="pickup-date" required></br>
+                <label for="request">Request Type:</label>
+                <select id="request" name="request" required>
+                    <option value="">--  Type  --</option>
+                    <option value="pre-order">Pre-Orders</option>
+                    <option value="general">General Questions</option>
+                </select></br>
+                <label for="item-details">Comments:</label>
+                <textarea id="item-details" name="item-details" rows="5" cols="22" placeholder="napkins please"></textarea></br>
+                <label for="notes">
+                    Notes:
+                </label>
+                <input type="text" id="notes" name="notes" placeholder="peanuts, shellfish"></br>
+            </fieldset>
+                <button type="submit">Submit</button>
+        </form>
+        <section id="hours-location">
+            <p id="location">1234 Pan Way, Flower, CA 94321</p>
+            <p>Contact Hours</p>
+            <ul>
+                <li>Mon - Fri: 7AM - 3PM</li>
+                <li>Sat - Sun: Closed</li>
+            </ul>
+        </section>
+    </main>
+    <footer>&copy; 2026 North Star Bakery</footer>
+</body>
+</html>

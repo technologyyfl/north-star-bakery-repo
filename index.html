@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Star Bakery</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <!-- 1. Brand Logo & Title / Nav -->
+        <a href="/" class="logo">
+            <img src="images/bakery-logo_c.png" alt="North Star Bakery Logo" width="250" height="250">
+        </a>
+        <h1>Home</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="pages/products.html">Products</a>
+            <a href="pages/about.html">About</a>
+            <a href="pages/contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <!-- 2. Welcome audio -->
+        <audio muted controls loop>
+            <source src="assets/bakery-welcome_c.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+            <!-- Storefront -->
+            <img src="/images/bakery-storefront_c.png" alt="image of the front of the store" class="storefront">
+        <section class="message">
+            <p id="welcome-message" class="opening">Welcome! Where every loaf starts before sunrise. Experience North Star Bakery.</p>
+            <p id="summary" class="opening">At North Star Bakery, there's nothing we love more than greeting our neighbors, commuters, and local families with our signature fresh loaf baked daily in the morning! We recommend putting in your pre-orders from our contact page so you don't miss out!</p>
+        </section>
+            <img src="images/bakery-signature-loaf_c.png" alt="picture of North Star Bakery's freshly baked loaf on top of a towel covered basket in hand" width="400" id="sig-loaf">
+        <!-- Hours and Location -->
+        <section id="hours-location">
+            <p id="location" >1234 Pan Way, Flower, CA 94321</p>
+            <p>Store Hours</p>
+            <ul>
+                <li>Mon - Fri: 7AM - 3PM</li>
+                <li>Sat - Sun: Closed</li>
+            </ul>
+        </section>
+        <!-- Feature Items -->
+         <section class="featured-item">
+             <p id="featured-item">Featured item of the week! Cookies!</p>
+             <picture>
+                <img src="images/bakery-feature-small_c.png" 
+                srcset="images/bakery-feature-large_c.png 800w, 
+                images/bakery-feature-small_c.png 500w" 
+                sizes="100vw" 
+                alt="picture of freshly baked cookies on display">
+            </picture>
+         </section>
+    </main>
+    <footer>&copy; 2026 North Star Bakery</footer>
+</body>
+</html>
