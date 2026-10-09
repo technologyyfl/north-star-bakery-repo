@@ -413,12 +413,12 @@ button:hover {
         letter-spacing: .2ch;
     }
     
-    #philosophy p:nth-child(2) {
+    #philosophy p:nth-child(2) { /* Here at North Star Bakery,.. */
         background-color: #2F2A26;
         color:#FFF8F0;
-        padding-right: 50vw;
+        padding:  2rem 50vw 2rem 2rem;
     }
-    #philosophy p:nth-child(3) {
+    #philosophy p:nth-child(3) { /* We use simple ingredients,... */
         background-color: #FFF8F0;
         color: #2F2A26;
     }
