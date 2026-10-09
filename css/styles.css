@@ -99,7 +99,7 @@ audio:hover {
     padding: 3rem 0;
     border: .5rem solid #D88C5A;
     line-height: 2;
-    font-size: x-large;
+    font-size: large;
     text-align: center;
     color: #FFF8F0;
     max-width: 50%;
@@ -124,15 +124,9 @@ li {
     font-size: 24pt;
 }
 
-picture img {
-    max-width:98%;
-    margin-bottom: 4rem;
-}
-
 footer {
     text-align: center;
-    margin-top: 200px;
-    padding-bottom: 100px;
+    margin: 4rem 0;
     color: #FFF8F0;
 }
 
@@ -324,8 +318,8 @@ button:hover {
         grid-template-areas: "header title"
                              "nav main"
                              "footer footer";
-                             grid-template-columns:  minmax(200px,10vw) 90vw;
-                             grid-template-rows: 15% 75% 10%;
+                             grid-template-columns: 10fr 90fr;
+                             grid-template-rows: 15fr 75fr 10fr;
     }
 
     header {
@@ -377,16 +371,6 @@ button:hover {
         padding: 25px;
         margin: auto;
     }
-
-    .storefront {
-        max-width: 50vw;
-        margin-inline: auto;
-        padding: 50px;
-    }
-
-    .message {
-        max-width: 90%;
-    }
     
     .message p:first-child {
         margin: 50px;
@@ -401,13 +385,12 @@ button:hover {
         line-height: 3;
     }
 
-    section.featured-item {
-        padding-bottom: 40px;
+    #hours-location {
+        letter-spacing: .3ch;
     }
 
     img {
         display: block;
-        width: 50vw;
         margin-inline: auto;
     }
 
@@ -444,6 +427,8 @@ button:hover {
     }
     
     footer {
+        border: 2px dashed green;
+        padding: 25px;
         grid-area: footer;
         text-align: center;
     }
