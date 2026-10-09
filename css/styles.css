@@ -3,7 +3,7 @@
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    max-width: 97%;
+    max-width: 100%;
 }
 
 header {
@@ -80,7 +80,7 @@ audio:hover {
 
 .message p:last-child {
     margin: 25px 25px 25px 50%;
-    ;
+    text-align: end;
 }
 
 .opening {
