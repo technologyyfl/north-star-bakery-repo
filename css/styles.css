@@ -3,6 +3,7 @@
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    max-width: 97%;
 }
 
 header {
@@ -15,8 +16,7 @@ header {
 .logo {
     display: flex;
     justify-content: center;
-    max-width: 100vw;
-    padding: 0 100%;
+    width: 100%;
     background-color: white;
 }
 
@@ -61,7 +61,7 @@ audio:hover {
 
 .storefront {
     display: block;
-    width: 100vw;
+    width: 100%;
 }
 
 .message {
@@ -70,18 +70,17 @@ audio:hover {
     background-color: #FFF8F0;
     color: black;
     width: 100%;
+    word-spacing: 1ch;
+    line-height: 2;
 }
 
 .message p:first-child {
-    margin: 25px 50vw 25px 25px;
-    text-align: justify;
-    line-height: 2;
+    margin: 25px 50% 25px 25px;
 }
 
 .message p:last-child {
-    margin: 25px 25px 25px 50vw;
-    text-align: justify;
-    line-height: 2;
+    margin: 25px 25px 25px 50%;
+    ;
 }
 
 .opening {
@@ -91,7 +90,7 @@ audio:hover {
 #sig-loaf {
     display: block;
     margin-inline: auto;
-    max-width: 98vw;
+    max-width: 98%;
     margin-top: 6rem;
 }
 
@@ -126,7 +125,7 @@ li {
 }
 
 picture img {
-    max-width:98vw;
+    max-width:98%;
     margin-bottom: 4rem;
 }
 
@@ -221,7 +220,7 @@ h2 {
 #philosophy p:nth-child(2) {
     font-size: 1.5rem;
     text-align: start;
-    padding-top: 10vw;
+    padding-top: 10%;
     padding-right: 50vw;
 }
 
