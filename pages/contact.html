@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>North Star Bakery</title>
+    <title>North Star Bakery - Contact</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
@@ -27,26 +27,24 @@
             <fieldset id="contact-info">
                 <legend>Contact Info</legend>
                 <label for="name">Name:</label>
-                <input type="text" name="name" required></br>
+                <input type="text" id="name" name="name" required></br>
                 <label for="email">Email:</label>
-                <input type="email" name="email" required></br>
+                <input type="email" id="email" name="email" required></br>
             </fieldset>
             <fieldset id="request-info">
                 <legend>Request Info</legend>
                 <label for="pickupdate">Pickup Date:</label>
-                <input type="date" name="pickup-date" required></br>
+                <input type="date" id="pickupdate" name="pickup-date" required><br>
                 <label for="request">Request Type:</label>
                 <select id="request" name="request" required>
                     <option value="">--  Type  --</option>
                     <option value="pre-order">Pre-Orders</option>
                     <option value="general">General Questions</option>
-                </select></br>
+                </select><br>
                 <label for="item-details">Comments:</label>
                 <textarea id="item-details" name="item-details" rows="5" cols="22" placeholder="napkins please"></textarea></br>
-                <label for="notes">
-                    Notes:
-                </label>
-                <input type="text" id="notes" name="notes" placeholder="peanuts, shellfish"></br>
+                <label for="notes">Notes:</label>
+                <input type="text" id="notes" name="notes" placeholder="peanuts, shellfish"><br>
             </fieldset>
                 <button type="submit">Submit</button>
         </form>
