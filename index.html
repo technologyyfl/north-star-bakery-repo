@@ -7,19 +7,21 @@
     <title>North Star Bakery</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
     <header>
         <!-- 1. Brand Logo & Title / Nav -->
         <a href="./index.html" class="logo">
             <img src="images/bakery-logo_c.png" alt="North Star Bakery Logo" width="250" height="250">
         </a>
-        <h1>Home</h1>
-        <nav>
-            <a href="./index.html">Home</a>
-            <a href="./pages/products.html">Products</a>
-            <a href="./pages/about.html">About</a>
-            <a href="./pages/contact.html">Contact</a>
+        <section class="page-title">
+            <h1>Home</h1>
+            <img src="images/light-mode.jpeg" id="mode-settings" class="light-mode" alt="dark mode off">
+        </section>
+        <nav class="mode-settings light-mode">
+            <a href="./index.html" class="light-mode">Home</a>
+            <a href="./pages/products.html" class="light-mode">Products</a>
+            <a href="./pages/about.html" class="light-mode">About</a>
+            <a href="./pages/contact.html" class="light-mode">Contact</a>
         </nav>
     </header>
     <main>
@@ -30,7 +32,7 @@
         </audio>
             <!-- Storefront -->
             <img src="./images/bakery-storefront_c.png" alt="image of the store front" class="storefront">
-        <section class="message">
+        <section class="message light-mode">
             <p id="welcome-message" class="opening">Welcome! Where every loaf starts before sunrise. Experience North Star Bakery.</p>
             <p id="summary" class="opening">At North Star Bakery, there's nothing we love more than greeting our neighbors, commuters, and local families with our signature fresh loaf baked daily in the morning! We recommend putting in your pre-orders from our contact page so you don't miss out!</p>
         </section>

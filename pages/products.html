@@ -13,33 +13,37 @@
         <a href="../index.html" class="logo">
             <img src="../images/bakery-logo_c.png" alt="North Star Bakery Logo" width="250" height="250">
         </a>
-        <h1>Products</h1>
-        <nav>
-            <a href="../index.html">Home</a>
-            <a href="./products.html">Products</a>
-            <a href="./about.html">About</a>
-            <a href="./contact.html">Contact</a>
+        <section class="page-title">
+            <h1>Products</h1>
+            <img src="../images/light-mode.jpeg" id="mode-settings" class="light-mode" alt="Light mode switch">
+        </section>
+        <nav class="mode-settings light-mode">
+            <a href="../index.html" class="light-mode">Home</a>
+            <a href="./products.html" class="light-mode">Products</a>
+            <a href="./about.html" class="light-mode">About</a>
+            <a href="./contact.html" class="light-mode">Contact</a>
         </nav>
     </header>
     <main>
-        <p class="product-message">Baked fresh daily!</p>
-        <section id="breads">
+        <p class="product-message" class="light-mode">Baked fresh daily!</p>
+        <section id="breads" class="light-mode">
             <figure>
                 <img src="../images/bakery-signature-loaf_c.png" alt="signature loaf" width="250">
                 <figcaption>Figure 1. North Star Bakery's signature loaf.</figcaption>
             </figure>
         </section>
-        <section id="pastries">
+        <section id="pastries" class="light-mode">
             <p>Pastries - Sold out!</p>
         </section>
-        <section id="cakes">
+        <section id="cakes" class="light-mode">
             <p>Cakes - Sold out!</p>
         </section>
-        <section id="price-range">
+        <section id="price-range" class="light-mode">
             <label for="bread-price" id="price-range-label">Price Range</label>
             <input type="number" id="bread-price" name="bread-price" min="1" max="10" step="1">
         </section>
     </main>
     <footer>&copy; 2026 North Star Bakery</footer>
+    <script src="../js/index.js"></script>
 </body>
 </html>

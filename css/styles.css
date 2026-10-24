@@ -20,10 +20,25 @@ header {
     background-color: white;
 }
 
+.page-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 h1 {
     padding: 2rem;
     color: #D88C5A;
     font-family: Helvetica, Arial, san-serif;
+}
+
+#mode-settings:hover {
+    cursor: pointer;
+}
+
+.light-mode,
+.dark-mode {
+    width: 15%;
 }
 
 nav {
@@ -321,8 +336,8 @@ button:hover {
         grid-template-areas: "header title"
                              "nav main"
                              "footer footer";
-                             grid-template-columns: 200px 90fr;
-                             grid-template-rows: 15fr 75fr 10fr;
+        grid-template-columns: 200px 90fr;
+        grid-template-rows: 15fr 75fr 10fr;
     }
 
     header {
@@ -337,8 +352,22 @@ button:hover {
         height: auto;
     }
 
+    .page-title {
+        display: grid;
+        grid-template: "page mode";
+        grid-template-columns: 60% 40%;
+    }
+
     h1 {
+        grid-area: page;
+        font-size: clamp(.5rem, 1.2rem, 2rem);
         padding: 1rem;
+    }
+
+    .light-mode,
+    .dark-mode {
+        grid-area: mode;
+        width: 100%;
     }
 
     h2 {
@@ -451,4 +480,16 @@ button:hover {
         text-align: center;
     }
 
+}
+
+
+/* DARK MODE */
+
+.dark-mode {
+    background-color: #2F2A26;
+    color:#FFF8F0;
+}
+
+.dark-mode a {
+    color:#D88C5A;
 }
